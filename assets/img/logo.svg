@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 74" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Katy Roofing Company TX — roof installation logo</title>
+  <!-- Roof mark: gable chevron at a 6:12 pitch with shingle courses -->
+  <g>
+    <rect x="0" y="8" width="60" height="58" rx="8" fill="#2F3F4C"/>
+    <path d="M30 20 L52 46 L48 49 L30 28 L12 49 L8 46 Z" fill="#A85E32"/>
+    <path d="M30 32 L47 52 L43 55 L30 40 L17 55 L13 52 Z" fill="#EDEFF1" opacity="0.9"/>
+    <rect x="26" y="56" width="8" height="10" rx="2" fill="#A85E32"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="76" y="40" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">KATY ROOFING</text>
+  <text x="76" y="60" font-family="Barlow, Arial, sans-serif" font-size="14" font-weight="600" fill="#B9C4CC" letter-spacing="4">COMPANY · TEXAS</text>
+</svg>
