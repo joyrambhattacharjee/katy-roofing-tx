@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://katyroofingtx.com/sitemap.xml
+Sitemap: https://katyroofingcompanytx.com//sitemap.xml
