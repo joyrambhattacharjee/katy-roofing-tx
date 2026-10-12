@@ -304,6 +304,46 @@ li { margin-bottom: 0.5em; }
   pointer-events: none;
 }
 
+.hero--home .hero__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas:
+    "copy copy"
+    "form media";
+  gap: 24px 48px;
+  padding: 64px 0;
+}
+
+.hero--home .hero__copy { grid-area: copy; }
+
+.hero--home .hero__media {
+  grid-area: media;
+  min-height: 620px;
+}
+
+.hero--home .hero__media img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero--home .hero__form {
+  grid-area: form;
+  margin: 0;
+  max-width: none;
+}
+
+.hero--home .form-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.hero--home .field--wide,
+.hero--home .form-grid > button,
+.hero--home .form-note {
+  grid-column: 1 / -1;
+}
+
 /* The form card sits above (overlapping) the hero image */
 .hero__form {
   position: relative;
@@ -907,6 +947,25 @@ li { margin-bottom: 0.5em; }
     grid-template-columns: 1fr;
   }
 
+  .hero--home .hero__grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "copy"
+      "media"
+      "form";
+    gap: 24px;
+    padding: 40px 0 56px;
+  }
+
+  .hero--home .hero__copy { align-self: auto; }
+  .hero.hero--home .hero__media { min-height: 0; margin-top: 0; }
+  .hero--home .hero__media img {
+    position: relative;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+  .hero--home .hero__form { margin: 0; max-width: none; }
+
   .hero__form { margin: 0 0 -80px 0; max-width: 560px; }
   .hero__media { margin-top: 110px; }
 
@@ -961,6 +1020,11 @@ li { margin-bottom: 0.5em; }
 
 @media (max-width: 640px) {
   body { font-size: 16px; }
+
+  .hero--home .form-grid { grid-template-columns: 1fr; }
+  .hero--home .field--wide,
+  .hero--home .form-grid > button,
+  .hero--home .form-note { grid-column: auto; }
 
   .ledger__row {
     grid-template-columns: 1fr;
